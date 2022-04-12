@@ -497,7 +497,7 @@ class Transformacje:
         R = math.sqrt(M * N)
             
         return(R, N, M)  
-        
+            
     def rad2dms(rad):
         """   
         Funkcja przelicza kąty w radianach na stopnie
@@ -519,4 +519,3 @@ class Transformacje:
         dms = [deg, mnt, round(sec, 5)]
         
         return(dms)    
-        
