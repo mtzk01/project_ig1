@@ -498,5 +498,5 @@ class Transformacje:
             
         return(R, N, M)  
         
-   
+    
         
