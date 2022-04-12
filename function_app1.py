@@ -425,8 +425,7 @@ class Transformacje:
     
     def sel_az_vincent(fl1, fl2, self):
         """   
-        Funkcja przelicza współrzędne Gaussa - Krugera  
-        na współrzędne geodezyjne.
+        Funkcja oblicza odległość na elipsoidzie (z vincenta) [m]
         
         Parameters
         -------
