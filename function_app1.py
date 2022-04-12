@@ -498,25 +498,5 @@ class Transformacje:
             
         return(R, N, M)  
         
-    def rad2dms(rad):
-        """   
-        Funkcja przelicza kąty w radianach na stopnie
-        
-        Parameters
-        -------
-        rad : [float] : kąt w radianach [rad]
-       
-        Returns
-        -------
-        dms : [list] : kąt w stopniach, minutach i sekundach [d, m, s]
-        
-        """     
-        dd = np.rad2deg(rad)
-        dd = dd
-        deg = int(np.trunc(dd))
-        mnt = int(np.trunc((dd-deg) * 60))
-        sec = ((dd-deg) * 60 - mnt) * 60
-        dms = [deg, mnt, round(sec, 5)]
-        
-        return(dms)    
+   
         
