@@ -94,8 +94,8 @@ class Transformacje:
 
     def blh_2_neu(fl1, fl2, self):
         """   
-        Funkcja przelicza współrzędne Gaussa - Krugera  
-        na współrzędne geodezyjne.
+        Funkcja przelicza współrzędne geodezyjne  
+        na współrzędne topograficzne.
     
         Parameters
         -------
@@ -315,8 +315,8 @@ class Transformacje:
     
     def u92u00_2_blh(X, Y, self):
         """   
-        Funkcja przelicza współrzędne układu 1992 lub układu 1992  
-        na współrzędne Gaussa - Krugera.
+        Funkcja przelicza współrzędne układu 1992 lub układu 2000  
+        na współrzędne geodezyjne.
         
         Parameters
         -------
@@ -476,7 +476,9 @@ class Transformacje:
       
     def R_M_N(self, fi):
         """   
-        Funkcja przelicza kąty w radianach na stopnie
+        Funkcja na podstawie współrzędnych geodezyjnych oblicza 
+        promień krzywizny południka i w pierwszym wertykale oraz 
+        średni promień krzywizny.
         
         Parameters
         -------
@@ -486,9 +488,9 @@ class Transformacje:
        
         Returns
         -------
-        R  : [float] : promień krzywizny południka  [m]
+        R  : [float] : średni promień krzywizny [m]
         N  : [float] : promień krzywizny w pierwszym wertykale [m]
-        M  : [float] : średni promień krzywizny [m]
+        M  : [float] : promień krzywizny południka  [m]
         
         """     
         N = self.a/math.sqrt(1 - self.e2 * math.sin(fi)**2)
